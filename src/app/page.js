@@ -1,6 +1,6 @@
 import Image from "next/image";
-import styles from "./page.module.css";
 import style from './../../public/main.css';
+import styles from "./page.module.css";
 import nextConfig from "../../next.config.mjs";
 
 export default function Home() {
