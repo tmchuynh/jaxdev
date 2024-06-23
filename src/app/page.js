@@ -1,6 +1,7 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import style from './../../public/main.css';
+import { basePath } from "next.config";
 
 export default function Home() {
   return (
@@ -18,12 +19,12 @@ export default function Home() {
           >
             By{" "}
             <Image
-              src={`${basePath}/images/vercel.svg`}"
-            alt="Vercel Logo"
-            className={styles.vercelLogo}
-            width={100}
-            height={24}
-            priority
+              src={`${basePath}/images/vercel.svg`}
+              alt="Vercel Logo"
+              className={styles.vercelLogo}
+              width={100}
+              height={24}
+              priority
             />
           </a>
         </div>
