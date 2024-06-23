@@ -1,11 +1,15 @@
 /** @type {import('next').NextConfig} */
+import path from 'path';
+
+
 const nextConfig = {
       output: 'export',
       images: {
             unoptimized: true,
       },
-      reactStrictMode: true,
-      basePath: '/jaxdev'
+      reactStrictMode: true
 };
 
-export default nextConfig;
+const basePath = path.join(__dirname, '/jaxdex');
+
+export { basePath, nextConfig as default };
