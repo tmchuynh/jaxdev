@@ -1,7 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
       output: 'export',
-      images: ['public/images'],
+      images: {
+            unoptimized: true,
+      },
       reactStrictMode: true,
       basePath: '/jaxdev'
 };
