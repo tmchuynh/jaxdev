@@ -29,13 +29,16 @@ jobs:
         with:
           static_site_generator: next
 
-      - name: Build with Next.js 🏗️
-        run: npx next build
+      - name: Build and Export Next.js app
+        run: |
+          npm run build
+          npm run export
 
-      - name: Upload artifact 📡
-        uses: actions/upload-pages-artifact@v3
+      - name: Archive artifact
+        uses: actions/upload-artifact@v2
         with:
-          path: ./out
+          name: my-nextjs-app
+          path: out
 
   deploy:
     environment:
