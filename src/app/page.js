@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import style from './../../public/main.css';
-import { basePath } from "next.config";
+import { nextConfig.basePath as basePath } from "../../next.config.mjs";
 
 export default function Home() {
   return (
