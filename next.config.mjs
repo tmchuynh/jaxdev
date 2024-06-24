@@ -11,4 +11,4 @@ const nextConfig = {
       basePath: '/jaxdev',
 };
 
-export default bundleAnalyzer(nextConfig);
+export default (nextConfig);
