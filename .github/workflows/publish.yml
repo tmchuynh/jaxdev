@@ -33,12 +33,6 @@ jobs:
         run: |
           npm run build
 
-      - name: Archive artifact
-        uses: actions/upload-artifact@v2
-        with:
-          name: my-nextjs-app
-          path: out
-
   deploy:
     environment:
       name: github-pages
